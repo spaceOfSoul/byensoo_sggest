@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수명 추천기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>변수명 추천기</h1>
+            <div class="form-container">
+                <label for="language">언어 :</label>
+                <input type="text" id="language" name="language">
+
+                <label for="type">타입 :</label>
+                <input type="text" id="type" name="type">
+
+                <label for="purpose">용도 :</label>
+                <input type="text" id="purpose" name="purpose">
+
+                <button id="submit">추천!</button>
+            </div>
+            <div class="results">
+                <div class="result-section">
+                    <h2>camelCase</h2>
+                    <div class="result-box">
+                        <span class="result" id="camelCase1">...</span>
+                        <button class="copy-button" data-target="camelCase1">copy</button>
+                    </div>
+                    <div class="result-box">
+                        <span class="result" id="camelCase2">...</span>
+                        <button class="copy-button" data-target="camelCase2">copy</button>
+                    </div>
+                    <div class="result-box">
+                        <span class="result" id="camelCase3">...</span>
+                        <button class="copy-button" data-target="camelCase3">copy</button>
+                    </div>
+                </div>
+                <div class="result-section">
+                    <h2>PascalCase</h2>
+                    <div class="result-box">
+                        <span class="result" id="PascalCase1">...</span>
+                        <button class="copy-button" data-target="PascalCase1">copy</button>
+                    </div>
+                    <div class="result-box">
+                        <span class="result" id="PascalCase2">...</span>
+                        <button class="copy-button" data-target="PascalCase2">copy</button>
+                    </div>
+                    <div class="result-box">
+                        <span class="result" id="PascalCase3">...</span>
+                        <button class="copy-button" data-target="PascalCase3">copy</button>
+                    </div>
+                </div>
+                <div class="result-section">
+                    <h2>snake_case</h2>
+                    <div class="result-box">
+                        <span class="result" id="snake_case1">...</span>
+                        <button class="copy-button" data-target="snake_case1">copy</button>
+                    </div>
+                    <div class="result-box">
+                        <span class="result" id="snake_case2">...</span>
+                        <button class="copy-button" data-target="snake_case2">copy</button>
+                    </div>
+                    <div class="result-box">
+                        <span class="result" id="snake_case3">...</span>
+                        <button class="copy-button" data-target="snake_case3">copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ad-container">
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-Om1iyRk3bleQBent" data-ad-width="160" data-ad-height="600"></ins>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

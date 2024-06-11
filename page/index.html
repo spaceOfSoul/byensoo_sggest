@@ -6,6 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>변수명 추천기</title>
+
+    <!-- SEO : descriptio -->
+    <meta name="description" content="언어, 타입, 용도에 따라 최적의 변수명을 추천해주는 변수명 추천기입니다.">
+    <meta name="keywords" content="변수명 추천기, camelCase, PascalCase, snake_case, 프로그래밍 변수명, 변수명 생성기">
+
+    <!-- SEO : opengraph -->
+    <meta property="og:title" content="변수명 추천기">
+    <meta property="og:description" content="언어, 타입, 용도에 따라 최적의 변수명을 추천해주는 변수명 추천기">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suggestvar.pages.dev">
+    <meta property="og:image" content="card-image.png">
+
+    <!-- SEO: twitter meta card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="변수명 추천기">
+    <meta name="twitter:description" content="언어, 타입, 용도에 따라 최적의 변수명을 추천해주는 변수명 추천기입니다.">
+    <meta name="twitter:image" content="card-image.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,18 +30,15 @@
     <div class="main-container">
         <div class="container">
             <h1>변수명 추천기</h1>
-            <div class="form-container">
-                <label for="language">언어 :</label>
-                <input type="text" id="language" name="language">
-
-                <label for="type">타입 :</label>
-                <input type="text" id="type" name="type">
-
-                <label for="purpose">용도 :</label>
+            <form class="form-container">
+                <label for="purpose">변수의 역할/용도 :</label>
                 <input type="text" id="purpose" name="purpose">
 
+                <label for="type">Type :</label>
+                <input type="text" id="type" name="type">
+
                 <button id="submit">추천!</button>
-            </div>
+            </form>
             <div class="results">
                 <div class="result-section">
                     <h2>camelCase</h2>

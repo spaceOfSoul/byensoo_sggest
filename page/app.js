@@ -10,10 +10,11 @@ async function getCsrfToken() {
     return data.csrfToken;
 }
 
-document.getElementById('submit').addEventListener('click', async() => {
+document.querySelector('form').addEventListener('submit', async(event) => {
+    event.preventDefault();
+
     try {
         const csrfToken = await getCsrfToken();
-        const language = document.getElementById('language').value;
         const type = document.getElementById('type').value;
         const purpose = document.getElementById('purpose').value;
 
@@ -24,7 +25,7 @@ document.getElementById('submit').addEventListener('click', async() => {
                 'Content-Type': 'application/json',
                 'CSRF-Token': csrfToken
             },
-            body: JSON.stringify({ language, type, purpose })
+            body: JSON.stringify({ type, purpose })
         });
 
         if (!response.ok) {
@@ -46,6 +47,7 @@ document.getElementById('submit').addEventListener('click', async() => {
         console.error('Error:', error);
     }
 });
+
 
 document.querySelectorAll('.copy-button').forEach(button => {
     button.addEventListener('click', () => {

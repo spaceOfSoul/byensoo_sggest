@@ -71,7 +71,6 @@ app.post('/suggest', async function(req, res) {
     You are an expert software developer. Your task is to suggest appropriate variable names for the given context. 
     The variable names should be meaningful, concise, and follow best practices for the given programming language.
 
-    Programming Language: ${language}
     Variable Type: ${type}
     Variable Purpose: ${purpose}
 
